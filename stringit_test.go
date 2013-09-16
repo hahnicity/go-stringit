@@ -1,0 +1,5 @@
+package stringit
+
+import "testing"
+
+
