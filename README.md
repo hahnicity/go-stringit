@@ -8,8 +8,9 @@ I got tired of using `+` to concatenate strings in Go. So I decided that I would
 recreate python's .format function for strings in golang.
 
 ## Usage
-Usage is limited to using only `{}` as a replacement tool. Types are also limited to 
-`string`, `int`, `uint64`, and `float64`. We can use the function like:
+Usage is currently limited to using only `{}` as a replacement tool. 
+
+We can use the function like:
 
         stringit.Format("The {} says {}", "cow", "MOO!")
 
@@ -24,3 +25,21 @@ And:
 Yields:
 
         "I have 871 bananas"
+
+## Supported Types
+The following types are supported:
+
+ * int
+ * int8
+ * int16
+ * int32
+ * int64
+ * uint
+ * uint8
+ * uint16
+ * uint32
+ * uint64
+ * float32
+ * float64
+ * bool
+ * string (of course)
