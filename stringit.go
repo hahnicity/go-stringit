@@ -56,6 +56,9 @@ func (f *Formatter) formatPiece(piece string, arg interface{}) string {
     case "uint64":
         i, _ := arg.(uint64)
         return strings.Replace(piece, "{}", strconv.FormatUint(i, f.UintBase), 1)
+    case "float":
+        fl, _ := arg.(float)
+        return strings.Replace(piece, "{}", strconv.FormatFloat(float64(fl), 'f', f.FloatPrec, 16), 1)
     case "float32":
         fl, _ := arg.(float32)
         return strings.Replace(piece, "{}", strconv.FormatFloat(float64(fl), 'f', f.FloatPrec, 32), 1)
