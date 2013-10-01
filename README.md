@@ -39,7 +39,6 @@ The following types are supported:
  * uint16
  * uint32
  * uint64
- * float
  * float32
  * float64
  * bool
